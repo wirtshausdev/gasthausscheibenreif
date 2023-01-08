@@ -1,0 +1,152 @@
+﻿	
+	h2,h4 {
+		color: maroon;										/* legt die Schriftfarbe fest */
+	}
+	
+	/* ---------------  header  ------------------*/
+		
+		nav {
+			margin-left: 0.4em;								/* legt den linken Abstand zum nächsten Element fest */
+		}
+
+		nav ul {			/* Nachfolgende Regeln gelten für die unordered lists im nav Bereich */
+			
+			font-family: Arial,"Times New Roman";			/* legt fest welche Schriftart verwendet werden soll */
+			font-size: small;								/* legt fest wie groß die Schrift erscheinen soll */
+			list-style: none;								/* sorgt dafür, dass keine Auflistungszeichen zu sehen sind */
+			margin: 0;										/* setzt den Abstand vom Rand bis zum nächsten Element auf 0 */
+			padding: 0;										/* setzt den Abstand zwischen Rand und Inhalt auf 0 */
+			
+		}	
+		
+		nav ul li {											/* Nachfolgende Regeln gelten für die list items in den unordered lists im nav Bereich */
+			background-color: maroon;						/* setzt die Hintergrundfarbe der list items im nav bereich auf maroon */
+			border-bottom-color: rgba(255, 213, 0, 1);		/* setzt die Farbe des unteren Randes auf Gelb */ 
+			border-bottom-style: solid;						/* macht dass die untere Randlinie durchgehend ist */
+			border-bottom-width: 0.1em;						/* setzt die Breite des Randes auf 0.1em */
+			border-right-color: rgba(255, 213, 0, 1);		/* setzt die Farbe des rechten Randes auf Gelb */
+			border-right-style: solid;						/* macht dass die rechte Randlinie durchgehend ist */
+			border-right-width: thick;						/* setzt die Breite des rechten Randes auf dick */
+			float: left;									/* Das Element rutscht nach links an den Rand seines Containers */
+			padding: 0.5em;									/* setzt den Abstand zwischen Rand und Inhalt auf 0.5em */
+			position: relative;		 						/* brauch ich damit ich die untergeordneten Elemente absolut positionieren kann */							
+			min-width: 10em;									/*bestimmt wie breit die box sein soll*/
+		}
+	
+		nav ul li a {										/* Nachfolgende Regeln gelten für die anchor Elemente in den li der ul im nav Bereich */
+			color: white;									/* setzt die Schriftfarbe auf weiss */
+			text-decoration: none;							/* sorgt dafür, dass die anchor Elemente nicht mehr unterstrichen sind */
+		}
+		
+		nav ul li ul {										/* Nachfolgende Regeln gelten für die ul in den li der ul im nav Bereich */
+			display:none;									/* sorgt dafür dass dieses Element (ul) nicht angezeigt wird */
+			left:0;											/* rutscht ganz nach links im letzten übergeordneten, relative positionierten Element (li) */
+			position:absolute;								/* sorgt dafür dass man dieses Element (ul) im Bezug auf das letzte übergeordnete,relative positionierte Element (li) positionieren kann */
+			top:2.3em;										/* sorgt dafür dass dieses Element (ul) nach oben hin einen bestimmten Abstand zum Rand des letzte übergeordnete,relative positionierte Element (li) bekommt */
+		}
+		
+		nav ul li a:hover{									/* Nachfolgende Regeln gelten für die a (über denen man mit der Maus steht) die im nav Bereich sind */
+			border-bottom-style:solid;						/* sorgt dafür dass unter dem a Element eine durchgehend Linie sichtbar wird */
+			border-bottom-width:thin;						/* sorgt dafür dass die untere Linie dünn dargestellt wird */
+			/*border-left-color:rgba(255, 213, 0, 1);*/		/* brauch ich noch ned */
+			color:rgba(255, 213, 0, 1);						/* sorgt dafür dass der Inhalt dieses Elements (a:hover) eine spezielle Farbe bekommt */
+		}
+		
+		nav ul li:hover ul {								/* Nachfolgende Regeln gelten für die ul in den li (über denen man mit der Maus steht) der ul im nav Bereich */
+			display:block;									/* sorgt dafür dass dieses Element (ul) angezeigt wird */
+		}
+		
+		nav ul li a[href="#"] {								/* Nachfolgende	Regeln gelten für die a (die href="#" haben) */
+			border-bottom-style: none;						/* sorgt dafür dass die untere Linie nicht mehr da ist */
+			color: white;									/* sorgt dafür dass der Inhalt dieses Elements (a[href="#"]) weiss dargestellt wird */
+		}	
+		
+		
+		header {
+			background-color: rgba(255, 213, 0, 1);			/* legt die Hintergrundfarbe fest */
+			height: 6.5em;									/* legt die Höhe des Elements fest */
+			
+			border-bottom: solid 2px lightgray;				/* legt die Einstellungen für die untere Randlinie fest*/ 
+			border-right: solid thin lightgray;				/* legt die Einstellungen für die rechte Randlinie fest*/
+		}
+		
+		header h1 {			
+			margin-top: 0.2em;								/* legt den oberen Abstand zum nächsten Element fest */
+			margin-bottom: 0;								/* legt den unteren Abstand zum nächsten Element fest */
+			padding: 0.5em;									/* legt den Abstand zum Rand dieses Elements (h1) fest */
+		}
+		
+		header h1 a{
+			color: maroon;									/* legt die Farbe des Inhalts des Elements fest */
+			text-decoration: none;							/* lässt alle text dekorationen (wie unterstrichen) verschwinden */
+		}
+		
+		/*----------------------------------------*/
+		
+	/*-------------  body  -------------------*/
+			
+		body {
+			background-color: rgb(251,251,170);				/* legt die Hintergrundfarbe fest */
+			font-family: Arial, "Times New Roman";			/* legt fest welche Schriftart verwendet werden soll */
+		}
+		
+		#SeitenInhalt {										/* Nachfolgende Regeln gelten für die id #Seiteninhalt */
+			min-height: 38em;								/* legt die Höhe des Elements fest */
+		}
+		
+		/*----------------------------------------*/
+		
+	/*--------------footer------------------------*/
+		
+		footer {
+			background-color: maroon; 						/* legt die Hintergrundfarbe fest */
+			margin: 0;										/* setzt den Abstand vom Rand bis zum nächsten Element auf 0 */
+			padding: 1em;									/* legt den Abstand zwischen Rand und Inhalt fest */
+			color: white;									/* setzt die Schriftfarbe auf weiss */
+			height: 1.3em;									/* legt die Höhe des Elements fest */
+		
+		}
+		
+		
+			
+		
+		
+	.left, .right, .center {
+		float: left;										/* Das Element rutscht nach links an den Rand seines Containers */ 
+		width: 30%;											/* setzt die Breite des Elements fest */ 
+		text-align: center;									/* Inhalt des Elements wird zentriert */
+		
+	}
+	
+	.right a {
+		text-decoration: none;								/* lässt alle text dekorationen (wie unterstrichen) verschwinden */
+		color: cornflowerblue;								/* legt die Schriftfarbe fest */
+	}
+	
+	.center {
+		width:40%;											/* setzt die Breite des Elements fest */
+	}
+		
+
+	/*----------------------------------------*/ 		
+
+	#startseitentext {
+		float: right;										/* sorgt dafür dass das Element mit der id="startseitentext" nach rechts rutscht */
+		list-style: none;									/* sorgt dafür dass die Auflistungszeichen einer Liste verschwinden */
+		color: maroon;										/* legt die Farbe des Inhalts fest */
+		border: solid maroon thick;							/* legt die Einstellungen für den Rand fest */
+		background-color: rgba(255, 213, 0, 1);				/* legt die Hintergrundfarbe fest */
+		padding: 1.5em;										/* legt den Abstand vom Inhalt bis zum Rand des Elements fest */
+	}
+
+	
+	.AbstandLinksOben {
+		padding-left: 5em;									/* legt den linken Abstand vom Inhalt bis zum Rand des Elements fest */
+		padding-top: 3em;									/* legt den oberen Abstand vom Inhalt bis zum Rand des Elements fest */
+		padding-bottom: 3em;								/* legt den unteren Abstand vom Inhalt bis zum Rand des Elements fest */
+	}
+
+
+
+	
+		

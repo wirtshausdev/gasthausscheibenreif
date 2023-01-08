@@ -1,0 +1,20 @@
+.speisekarte {
+	
+	/*width: 22em;*/
+}
+
+table {
+	border: solid medium black;						/* Einstellungen für den Rand um ein Element (table) */
+	padding: 2em;									/* legt den Abstand vom Inhalt des Elements zum Rand des Elements fest */
+
+}
+
+th {
+	padding-bottom: 1em;							/* legt den unteren Abstand zum Rand fest */
+	font-size: 30px;								/* legt die Schriftgröße fest */
+}
+
+td {
+	padding: 0.5em;									/* legt den Abstand vom Inhalt des Elements zum Rand des Elements fest */
+	font-size: 20px;								/* legt die Schriftgröße fest */
+}
